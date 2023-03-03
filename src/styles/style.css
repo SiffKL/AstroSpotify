@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #292929;
+}
+
+h1,
+h2,
+p {
+  color: white;
+  font-family: roboto;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+main {
+  display: flex;
+
+  padding-left: 300px; /* set padding to be 20px larger than nav width */
+}
