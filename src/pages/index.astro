@@ -2,42 +2,60 @@
 import "../styles/style.css";
 import Card from "../components/Cards.astro";
 import Navigation from "../components/Navigation.astro";
+import Mainlayout from "../layouts/Mainlayout.astro";
 
 // const { header } = Astro.props;
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <Navigation />
-
-    <main>
-      <Card
-        header="Skidt Pyt"
-        text="En eller anden tekst der knytter sig til sange der ses opover"
-      />
-      <Card
-        header="Blip Blop"
-        text="En eller anden tekst der knytter sig til sange der ses opover"
-      />
-      <Card
-        header="For Syv Sytten"
-        text="En eller anden tekst der knytter sig til sange der ses opover"
-      />
-      <Card
-        header="Godnat"
-        text="En eller anden tekst der knytter sig til sange der ses opover"
-      />
-      <Card
-        header="Træls Træls"
-        text="En eller anden tekst der knytter sig til sange der ses opover"
-      />
-    </main>
-  </body>
-</html>
+<Mainlayout title="Spotify">
+  <main>
+    <Card
+      header="Skidt Pyt"
+      text="En eller anden tekst der knytter sig til sange der ses opover"
+    />
+    <Card
+      header="Blip Blop"
+      text="En eller anden tekst der knytter sig til sange der ses opover"
+    />
+    <Card
+      header="For Syv Sytten"
+      text="En eller anden tekst der knytter sig til sange der ses opover"
+    />
+    <Card
+      header="Godnat"
+      text="En eller anden tekst der knytter sig til sange der ses opover"
+    />
+    <Card
+      header="Træls Træls"
+      text="En eller anden tekst der knytter sig til sange der ses opover"
+    />
+    <Card
+      header="Skidt Pyt"
+      text="En eller anden tekst der knytter sig til sange der ses opover"
+    />
+    <Card
+      header="Blip Blop"
+      text="En eller anden tekst der knytter sig til sange der ses opover"
+    />
+    <Card
+      header="For Syv Sytten"
+      text="En eller anden tekst der knytter sig til sange der ses opover"
+    />
+    <Card
+      header="Godnat"
+      text="En eller anden tekst der knytter sig til sange der ses opover"
+    />
+    <Card
+      header="Træls Træls"
+      text="En eller anden tekst der knytter sig til sange der ses opover"
+    />
+    <Card
+      header="Godnat"
+      text="En eller anden tekst der knytter sig til sange der ses opover"
+    />
+    <Card
+      header="Træls Træls"
+      text="En eller anden tekst der knytter sig til sange der ses opover"
+    />
+  </main>
+</Mainlayout>

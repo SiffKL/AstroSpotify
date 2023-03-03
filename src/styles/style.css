@@ -3,6 +3,9 @@
 }
 body {
   background-color: #292929;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  height: 100vh;
 }
 
 h1,
@@ -19,7 +22,8 @@ nav {
 }
 
 main {
-  display: flex;
-
-  padding-left: 300px; /* set padding to be 20px larger than nav width */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: min-content;
+  gap: 1rem;
 }

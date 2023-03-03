@@ -1,0 +1,41 @@
+---
+import "../styles/style.css";
+import Card from "../components/Cards.astro";
+import Navigation from "../components/Navigation.astro";
+import Mainlayout from "../layouts/Mainlayout.astro";
+import Cardcategory from "../components/Cardcategory.astro";
+
+// const { header } = Astro.props;
+---
+
+<Mainlayout title="Spotify - search">
+  <main>
+    <Cardcategory
+      newBadge={false}
+      header="Titel"
+      imgPath="https://api.lorem.space/image/album?w=150&h=150&hash=8B7BCDC2"
+    />
+    <Cardcategory
+      newBadge={true}
+      header="Halli Hallo"
+      imgPath="https://api.lorem.space/image/album?w=150&h=150&hash=500B67FB"
+    />
+    <Cardcategory
+      header="Og lige et"
+      imgPath="https://api.lorem.space/image/album?w=150&h=150&hash=A89D0DE6"
+    />
+    <Cardcategory
+      header="Øjeblik"
+      imgPath="https://api.lorem.space/image/album?w=150&h=150&hash=225E6693"
+    />
+    <Cardcategory
+      newBadge={true}
+      header="Om lidt er det"
+      imgPath="https://api.lorem.space/image/album?w=150&h=150&hash=9D9539E7"
+    />
+    <Cardcategory
+      header="WEEKEND"
+      imgPath="https://api.lorem.space/image/album?w=150&h=150&hash=BDC01094"
+    />
+  </main>
+</Mainlayout>

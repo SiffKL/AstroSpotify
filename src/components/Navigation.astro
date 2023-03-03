@@ -2,28 +2,38 @@
 ---
 
 <nav>
-  <img class="logo" src="../icons/logo.svg" alt="" />
-  <div class="gap">
-    <img src="../icons/home-filled.svg" alt="" /><a href="/#">Hjem</a>
-  </div>
-  <div>
-    <img src="../icons/search-icon.svg" alt="" /><a href="/#">Søg</a>
-  </div>
-  <div>
-    <img src="../icons/library-icon.svg" alt="" /><a href="/#">Dit Bibliotek</a>
-  </div>
-  <div class="gap">
-    <img src="../icons/create-icon.svg" alt="" /><a href="/#">Opret playliste</a
-    >
-  </div>
-  <div>
-    <img src="../icons/heart-icon.svg" alt="" /><a href="/#"
-      >Sange, du synes godt..</a
-    >
+  <div class="navwrapper">
+    <div>
+      <a href="/"> <img class="logo" src="../icons/logo.svg" alt="" /></a>
+    </div>
+    <div class="gap">
+      <img src="../icons/home-filled.svg" alt="" /><a href="/#">Hjem</a>
+    </div>
+    <div>
+      <img src="../icons/search-icon.svg" alt="" /><a href="/search">Søg</a>
+    </div>
+    <div>
+      <img src="../icons/library-icon.svg" alt="" /><a href="/#"
+        >Dit Bibliotek</a
+      >
+    </div>
+    <div class="gap">
+      <img src="../icons/create-icon.svg" alt="" /><a href="/#"
+        >Opret playliste</a
+      >
+    </div>
+    <div>
+      <img src="../icons/heart-icon.svg" alt="" /><a href="/#"
+        >Sange, du synes godt..</a
+      >
+    </div>
   </div>
 </nav>
 
 <style>
+  .navwrapper {
+    position: fixed;
+  }
   a {
     margin-left: 10px;
     text-decoration: none;
@@ -51,11 +61,8 @@
   }
 
   nav {
-    position: fixed; /* Fixes the nav bar position */
-    top: 0; /* Sets the top position to 0 */
-    left: 0; /* Sets the left position to 0 */
     height: 100%; /* Sets the height to 100% to fill the entire height of the browser window */
-    width: 300px; /* Sets the width to 300px */
+
     background-color: black; /* Sets the background color to a light gray */
     padding: 20px; /* Adds some padding inside the nav bar */
     box-sizing: border-box; /* Includes padding and border in the nav bar width and height */
